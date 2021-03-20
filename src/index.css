@@ -1,0 +1,695 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+ul{margin: 0;
+padding: 0;
+list-style: none;}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button:focus
+{
+  outline: none;
+}
+
+ /* NAV BAR **************************************************** */
+
+
+ .nav{
+   width: 100%;
+   height: 85px;
+ 
+ }
+ .nav-logo img{
+   margin-left: 8%;
+ }
+ 
+ .nav-title ul{
+   display: flex;
+   justify-content:space-between;
+   width: 80%;
+   margin-left: 10%;
+
+ }
+ .nav-title ul li{
+   font-size: 20px;
+   line-height: 85px;
+ }
+
+ .nav-icons div{
+   width: 100%;
+   margin-left: 20%;
+  
+
+ }
+
+ .nav-icons i{
+   font-size: 25px;
+   margin-left: 10px;
+   line-height: 70px;
+   justify-content: center;
+ }
+
+ sup{
+   font-size: 30px;
+   color: burlywood;
+ }
+
+ .nav-bars{
+   font-size: 25px;
+   line-height: 70px;
+ }
+ .nav-list{
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   background-color: rgb(221, 230, 212);
+   z-index: 1;
+  
+   transform: translateX(-100%);
+   transition: all 1s;
+ }
+
+ .nav-list ul li{
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-size: 20px;
+   padding-left: 20px;
+   transition: all 2s;
+  
+ }
+ .nav-list ul li:hover{
+   background-color: royalblue;
+   transform:scale(1.02);
+ 
+ }
+ .nav-list ul li.dacbiet:hover{
+   background-color: rgb(221, 230, 212);;
+ }
+ .nav-list ul li.dacbiet{
+   display: flex;
+   justify-content: space-between;
+ }
+ .nav-list ul li.dacbiet i{
+   font-size: 35px;
+   margin-right: 20px;
+   color: red;
+ }
+ @media (max-width:768px)
+  {
+    .nav-title,.nav-icons{
+      display: none;
+    }
+    .hien{
+    transform: translateX(0);
+    }
+  }
+
+  @media (min-width:768px)
+  {
+    .nav-bars{
+      display: none;
+    }
+  }
+
+
+  /* HOME **************************************************** */
+
+  .home{
+    width: 100%;
+  }
+  .home-intro{
+    width: 100%;
+    height: 565px;
+  
+    
+  }
+
+  .intro-trai{
+      width: 85%;
+      height: 70%;
+      margin-top: 15%;
+      margin-left: 15%;
+  
+  }
+
+  .intro-trai h1{
+    font-size: 50px;
+   margin-bottom: 40px;
+  }
+.intro-trai p{
+  margin-bottom: 30px;
+  color: burlywood;
+  letter-spacing: 3px;
+}
+
+.anh1{
+  width: 95%;
+  margin-left: 5%;
+  height: 565px;
+  border-radius: 10px;
+}
+.anh2{
+  width: 255px;
+  height: 165px;
+  position: relative;
+  border-radius: 10px;
+  top: -165px;
+}
+.intro-trai button:hover{
+  background-color: slategray;
+  color: brown;
+}
+
+.home-demo{
+  height: 600px;
+  width: 100%;
+  background-color: #f1f5f8;
+}
+.home-demo h1{
+  text-align: center;
+  line-height: 200px;
+}
+
+
+.demo-btn{
+  width: 112px;
+  height: 40px;
+
+margin: auto;
+margin-top: 20px;
+}
+.demo-btn:hover button{
+  background-color: seagreen;
+  color: yellow;
+}
+@media (max-width:992px)
+  {
+    .intro-phai{
+      display: none;
+    }
+    .home-intro{
+      height: 500px;
+    }
+    .home-demo{
+      height: 880px;
+    }
+  }
+  @media (max-width: 576px)
+    {
+      .home-demo{
+        height: 1200px;
+      }
+    }
+
+  .home-des{
+    height: 470px;
+    background-color: #eaded7;
+  }
+  .des-tt{
+    padding-top: 100px;
+  }
+  .des-tt h2{
+    text-align: center;
+  }
+  .des-tt p{
+    text-align: center;
+  }
+.des-tong{
+  margin-top: 100px;
+}
+
+.des-part{
+  width: 95%;
+ margin-left: 2.5%;
+  text-align: center;
+ 
+  background-color: rgb(246, 252, 251);
+  border-radius: 10px;
+  
+}
+
+.des-part i{
+font-size: 30px;
+line-height: 70px;
+
+}
+
+.des-part h3{
+  margin-bottom: 20px;
+}
+.des-part p{
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+
+.twitter{
+
+  color: aqua;
+}
+.yahoo{
+  color: violet;
+}
+.youtube{
+  color: red;
+}
+@media (max-width:992px)
+  {
+    .home-des{
+      height: 800px;
+    }
+  }
+  @media (max-width:870px)
+  {
+    .home-des{
+      height: 900px;
+    }
+  }
+  @media (max-width:576px)
+  {
+    .home-des{
+      height: 1100px;
+    }
+  }
+
+  .home-sale{
+    height: 620px;
+    width: 100%;
+   
+  }
+  .sale-trai{
+    
+    margin-top: 240px;
+    width: 80%;
+    margin-left: 10%;
+    
+  }
+  .sale-phai{
+    margin-top: 300px;
+  }
+  .sale-phai input{
+      width: 80%;
+      margin-left: 10%;
+      height: 50px;
+  }
+  @media (max-width:992px)
+  {
+    .home-sale{
+      height: 420px;
+    
+    }
+    .sale-trai{
+      margin-top: 50px
+    }
+    .sale-phai{
+      margin-top: 0px
+    }
+  }
+
+  .footer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: rgb(196, 221, 51);
+    text-align: center;
+    line-height: 80px;
+  }
+
+
+
+
+  /* Products **************************************************** */
+
+.title-home{
+  height: 135px;
+  line-height: 135px;
+  width: 100%;
+  background-color: violet;
+  margin-top: 10px;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+.title-home h1{
+  display: inline;
+}
+.title-dacbiet{
+  color: aqua;
+}
+
+.pro-chedo{
+  margin-bottom: 20px;
+  display: flex;
+}
+.pro-chedo i{
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.duong-ke{
+  height: 0.1px;
+  width: 100%;
+  background-color: black;
+  margin-top: 20px;
+  
+}
+
+.sig{
+  position: relative;
+}
+
+.sig-img{
+ width: 95%;
+ margin-left: 2.5%;
+ height: 230px;
+ border-radius: 10px;
+}
+ .sig .sig-khung{
+  position: absolute;
+  left: 6%;
+  height: 230px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  top:0 ;
+  width: 88%;
+  transition: all 1s;
+}
+
+
+.sig:hover .sig-khung{
+ opacity: 1;
+}
+.sig .sig-khung div{
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  line-height: 200px;
+  color: wheat;
+  font-size: 50px;
+}
+
+.sig .sig-tt{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+
+  margin-top: 10px;
+  margin-left: 5%;
+  
+  
+  
+  
+}
+
+.sig .sig-tt p{
+  color: chocolate;
+}
+.sig .sig-tt .mieuta,.detail
+  {
+    display: none;
+  }
+
+.boido{
+  color: red;
+}
+
+.filter{
+  width: 90%;
+  margin-left: 10%;
+}
+
+.filter-1 input{
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+
+.filter-2 div button{
+  display: block;
+  border: none;
+  background-color:white;
+  margin-top: 5px;
+}
+
+.gachchan{
+  color: red;
+}
+.filter-3,.filter-4,.filter-5{
+  margin-top: 10px;
+}
+.filter-5
+  {
+    display: flex;
+    justify-content: space-between;
+  
+  }
+.filter-5 input{
+  margin-top: 5px;
+}
+.filter-6{
+  margin-bottom: 20px;
+}
+.yen{
+  position: sticky;
+  top: 0px;
+}
+.comeback{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+
+.anh{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.anh-to img{
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+}
+.anh-nho {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+.anh-nho img {
+  width: 18%;
+  height: 75px;
+ 
+  border-radius: 10px;
+}
+.thongtin{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.thongtin p{
+  letter-spacing: 2.5px;
+}
+.thongtin h1,h4{
+  line-height: 50px;
+}
+.soluong{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.soluong i{
+font-size: 30px;
+margin-right: 20px;
+}
+.soluong h1{
+  margin-right: 20px;
+}
+.table{
+  font-size: 20px;
+}
+.sua-anh img{
+  width: 50px;
+  height: 50px;
+}
+
+.sua-xoa i{
+  color: red;
+}
+.but{
+  justify-content: space-between;
+  display: flex;
+}
+
+.thanhtoan{
+  width: 400px;
+  height: 200px;
+ border: 1px solid rgba(0, 0, 0, 0.5);
+ border-radius: 5px;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.btn-thanhtoan{
+  width: 400px;
+  margin: auto;
+}
+.btn-thanhtoan button{
+  width: 100%;
+}
+.chinh-thanhtoan{
+  width: 70%;
+ margin-left: 20%;
+ margin-top: 20px;
+}
+.tong{
+  margin-top: 20px;
+}
+.trong{
+  height: 460px;
+}
+.trong h1{
+  text-align: center;
+  padding-top: 30px;
+}
+.trong button{
+  
+  display: flex;
+  text-align: center;
+ margin-left: 46%;
+}
+.khung-thongbao {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+.hienlen{
+  z-index: 10;
+  opacity: 1;
+}
+.thongbao{
+  width: 80%;
+ text-align: center;
+  height: 400px;
+  margin: auto;
+ 
+  background-color: rgb(255, 255, 255);
+
+  margin-top: 100px;
+}
+
+.thongbao i{
+  font-size: 40px;
+  color: green;
+ margin-top: 30px;
+ line-height: 200px;
+}
+.thongbao h3{
+  color: chocolate;
+  margin-top: 50px;
+}
+
+.che{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  
+}
+.che-icons{
+  width: 100%;
+  height: 85px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.3) ;
+  margin-bottom: 20px;
+}
+.tab-quanli ul {
+  background-color: #534c4c;
+  height: 500px;
+}
+.tab-quanli ul li{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+ 
+  border-bottom: 1px solid rgba(202, 181, 181, 0.5);
+
+}
+.tab-quanli ul li i{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  margin-right: 40px;
+}
+.tab-quanli ul li b{
+  color: white;
+}
+.maunen{
+  background-color: rgb(179, 144, 144);
+}
+.tungphan{
+  width: 100%;
+  
+  margin-top: 20px;
+ 
+}
+
+.an{
+  display: none;
+}
+.khung-input ul li input{
+
+  width: 90%;
+  margin-left: 5%;
+  height: 50px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.btn-nut{
+  width: 120px;
+  height: 40px;
+  margin: auto;
+}
+
+.del{
+  width: 90%;
+  
+  margin-left: 5%;
+}
+.del-part{
+  padding-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0.5px rgba(0, 0, 0, 0.5);
+  
+}
+
+.del-part i{
+  font-size: 25px;
+  color: red;
+}
